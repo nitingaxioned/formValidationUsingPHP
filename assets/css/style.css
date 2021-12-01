@@ -1,0 +1,271 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a { 
+  display: inline-block;
+  text-decoration: none; 
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 86%; 
+  margin: 0 auto;
+}
+/*=================================
+  Header styling starts here
+=================================*/
+
+header p{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #4CAF50;
+  font-weight: bold;
+  padding: 20px 0 30px 0;
+}
+
+/*=================================
+  Header styling ends here
+=================================*/  
+
+/*=================================
+  main styling starts here
+=================================*/
+
+.pop-up{
+  text-align: center;
+  padding: 10px 0;
+}
+
+.pop-up-msg{
+  color: #525252;
+  font-weight: bold;
+  margin-left: 50%;
+  width: 30%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #cccccc;
+  border-radius: 25px;
+}
+
+form{
+  width: 50%;
+  margin: auto;
+  background-color: #fafafa;
+  border-radius: 25px;
+  padding: 20px 5%;
+  margin-bottom: 6px;
+}
+
+.form-group{ 
+  margin: 5px 0 0;
+  position: relative;
+}
+
+.form-group > label:first-child{
+  display: block;
+  width: fit-content;
+  margin: 7px 0;
+  color: #525252;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+input[type="file"],
+input[type=text], 
+input[type=password]{
+  width: 100%;
+  padding: 5px 10px;
+  margin: 8px 0 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group > .gender-lable:first-child{ display: inline-block; }
+input[type=radio]{ margin-left: 5%; }
+input:focus{ outline: none; }
+
+.error{
+  position: absolute;
+  color: #ff5555;
+  font-size: 12px;
+  left: 0;
+  top: 18px;
+}
+
+.form-controls{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.form-controls input{
+  width: 48%;
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding: 7px 10px;
+  margin: 18px 0 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-controls input:hover{ background-color: #323232; }
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+}
+
+.card{
+  background: #dfdfdf;
+  width: 40%;
+  padding: 20px 2%;
+  margin: 20px auto;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #323232;
+  position: relative;
+}
+
+.card p{ padding: 2px 1%; }
+
+.display-name{
+  font-size: 18px;
+  padding: 5px 0;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/ 
+
+
+
+footer{
+  text-align: center;
+  font-size: 12px;
+  color: #fafafa;
+  background: #323232;
+  padding: 5px;
+}
+
+
+
+ /*=================================
+  footer styling ends here
+=================================*/ 
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+
+
+
+}  
